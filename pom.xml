@@ -5,7 +5,7 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.afcepf.atod</groupId>
-    <artifactId>Vin-Data-GestionVin</artifactId>
+    <artifactId>Wine-Data-Generic</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <properties>
@@ -21,12 +21,12 @@
     <dependencies>
         <dependency>
             <groupId>fr.afcepf.atod</groupId>
-            <artifactId>Vin-Entity</artifactId>
+            <artifactId>Wine-Entity</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>fr.afcepf.atod</groupId>
-            <artifactId>Vin-Data-Exception</artifactId>
+            <artifactId>Wine-Exception</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
@@ -65,10 +65,10 @@
             <version>4.3.1.Final</version>
         </dependency>
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>mysql-connector-java-5.1.23-bin</artifactId>
-            <version>SNAPSHOT</version>
-        </dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>${mysql.version}</version>
+		</dependency>
     </dependencies>
     
     <build>

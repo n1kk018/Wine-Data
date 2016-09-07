@@ -6,8 +6,6 @@
 package fr.afcepf.atod.vin.data.impl;
 
 import fr.afcepf.atod.vin.data.api.IDaoGestionVin;
-import fr.afcepf.atod.vin.data.exception.CodeErreurVin;
-import fr.afcepf.atod.vin.data.exception.ExceptionsVin;
 import fr.afcepf.atod.vin.entity.Product;
 import java.util.Set;
 import javax.transaction.Transactional;
@@ -34,7 +32,7 @@ public class DaoGestionVin implements IDaoGestionVin {
      *                  Requetes HQL
      ****************************************************/
 
-   
+    	private static final String REQALL = "";
 
     /****************************************************.
      *                 Fin Requetes HQL
