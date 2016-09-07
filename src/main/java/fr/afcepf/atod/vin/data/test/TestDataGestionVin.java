@@ -1,3 +1,4 @@
+package fr.afcepf.atod.vin.data.test;
 
 import fr.afcepf.atod.vin.data.api.IDaoGestionVin;
 import fr.afcepf.atod.vin.data.exception.ExceptionsVin;
