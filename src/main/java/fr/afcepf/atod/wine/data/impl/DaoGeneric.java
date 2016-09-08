@@ -60,9 +60,7 @@ public abstract class DaoGeneric<Obj, ID extends Serializable> implements IDaoGe
 	@SuppressWarnings({ "unchecked" })
 	@Override
 	public Obj findObj(ID id) throws WineException {
-		@SuppressWarnings({})
 		Obj ob = (Obj) new Object();
-
 		ob = (Obj) sf.getCurrentSession().get(type, id);
 		if (ob == null) {
 			throw new WineException(WineErrorCode.RECHERCHE_NON_PRESENTE_EN_BASE, "object not found");
