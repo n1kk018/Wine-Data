@@ -3,26 +3,26 @@
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property> 
-    <property name="hbm2ddl.auto">create-drop</property>
-    <mapping class="fr.afcepf.atod.vin.entity.Product"/>
-    <mapping class="fr.afcepf.atod.vin.entity.ProductWine"/> 
-    <mapping class="fr.afcepf.atod.vin.entity.ProductAccessories"/>
-    <mapping class="fr.afcepf.atod.vin.entity.ProductType"/>
-    <mapping class="fr.afcepf.atod.vin.entity.ProductVarietal"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Region"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Country"/>
-    <mapping class="fr.afcepf.atod.vin.entity.OrderDetail"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Supplier"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Order"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Customer"/>
-    <mapping class="fr.afcepf.atod.vin.entity.User"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Comment"/>
-    <mapping class="fr.afcepf.atod.vin.entity.PaymentInfo"/>
-    <mapping class="fr.afcepf.atod.vin.entity.ShippingMethod"/>
-    <mapping class="fr.afcepf.atod.vin.entity.City"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Adress"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Admin"/>
-    <mapping class="fr.afcepf.atod.vin.entity.Newsletter"/>
-    <mapping class="fr.afcepf.atod.vin.entity.SpecialEvent"/>
+    <property name="hbm2ddl.auto">update</property>
+    <mapping class="fr.afcepf.atod.wine.entity.Product"/>
+    <mapping class="fr.afcepf.atod.wine.entity.ProductWine"/> 
+    <mapping class="fr.afcepf.atod.wine.entity.ProductAccessories"/>
+    <mapping class="fr.afcepf.atod.wine.entity.ProductType"/>
+    <mapping class="fr.afcepf.atod.wine.entity.ProductVarietal"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Region"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Country"/>
+    <mapping class="fr.afcepf.atod.wine.entity.OrderDetail"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Supplier"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Order"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Customer"/>
+    <mapping class="fr.afcepf.atod.wine.entity.User"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Comment"/>
+    <mapping class="fr.afcepf.atod.wine.entity.PaymentInfo"/>
+    <mapping class="fr.afcepf.atod.wine.entity.ShippingMethod"/>
+    <mapping class="fr.afcepf.atod.wine.entity.City"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Adress"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Admin"/>
+    <mapping class="fr.afcepf.atod.wine.entity.Newsletter"/>
+    <mapping class="fr.afcepf.atod.wine.entity.SpecialEvent"/>
   </session-factory>
 </hibernate-configuration>
