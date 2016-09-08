@@ -1,6 +1,8 @@
 package fr.afcepf.atod.wine.data.impl;
 
 import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +22,14 @@ public abstract class DaoGeneric<Obj, ID extends Serializable> implements IDaoGe
 	@Autowired
 	private SessionFactory sf;
 
-	protected Class<Obj> type;
+	protected Class<? extends Obj> type;
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public DaoGeneric() {
+		 Type t = getClass().getGenericSuperclass();
+	     ParameterizedType pt = (ParameterizedType) t;
+	     type = (Class) pt.getActualTypeArguments()[0];
+	}
 
 	@Override
 	public Obj insertObj(Obj o) throws WineException {
