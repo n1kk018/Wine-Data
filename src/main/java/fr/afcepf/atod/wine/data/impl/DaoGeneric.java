@@ -53,6 +53,19 @@ public abstract class DaoGeneric<Obj, ID extends Serializable> implements IDaoGe
 		}
 		return ret;
 	}
+	
+	@Override
+    public Boolean updateWithEvictObj(Obj o) throws WineException {
+        Boolean ret = false;
+        if (o != null) {
+            sf.getCurrentSession().evict(o);
+            sf.getCurrentSession().update(o);
+                ret = true;
+        } else {
+            throw new WineException(WineErrorCode.UPDATE_NON_EFFECTUE_EN_BASE, "object update failed");
+        }
+        return ret;
+    }
 
 	@Override
 	public Boolean removeObj(Obj o) throws WineException {
