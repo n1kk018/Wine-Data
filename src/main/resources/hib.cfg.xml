@@ -23,8 +23,6 @@
     <mapping class="fr.afcepf.atod.wine.entity.Comment"/>
     <mapping class="fr.afcepf.atod.wine.entity.PaymentInfo"/>
     <mapping class="fr.afcepf.atod.wine.entity.ShippingMethod"/>
-    <mapping class="fr.afcepf.atod.wine.entity.Region"/>
-    <mapping class="fr.afcepf.atod.wine.entity.City"/>
     <mapping class="fr.afcepf.atod.wine.entity.Adress"/>
     <mapping class="fr.afcepf.atod.wine.entity.Admin"/>
     <mapping class="fr.afcepf.atod.wine.entity.Newsletter"/>
