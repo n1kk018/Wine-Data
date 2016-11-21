@@ -15,7 +15,7 @@
         <hibernate.version>4.3.8.Final</hibernate.version>
         <mysql.version>5.1.27</mysql.version>
         <commons.dbcp.version>2.0</commons.dbcp.version>
-        <spring.version>4.0.1.RELEASE</spring.version>
+        <spring.version>4.2.8.RELEASE</spring.version>
     </properties>
     
     <dependencies>
@@ -79,11 +79,4 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>unknown-jars-temp-repo</id>
-            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
 </project>
