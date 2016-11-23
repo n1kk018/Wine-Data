@@ -11,6 +11,8 @@
 
 <context:component-scan base-package="fr.afcepf.atod"/>
 
+<tx:annotation-driven />
+
 <bean id="maDataSource"     class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
     <property name="url"                value="jdbc:mysql://127.0.0.1:3306/wine_bdd"/>
     <property name="driverClassName"    value="com.mysql.jdbc.Driver"/>
@@ -22,7 +24,6 @@
     <property name="configLocation"     value="classpath:hib.cfg.xml"/>
 </bean>
 
-<tx:annotation-driven/>
 <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
     <property name="sessionFactory"     ref="maSessionFactory"/>    
 </bean>
